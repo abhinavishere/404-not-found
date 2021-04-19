@@ -36,9 +36,9 @@
 
 ## Overview
 
-![screenshot-mobile](./screenshot-mobile.png)
+![screenshot-mobile](./images/screenshot-mobile.png)
 
-![screenshot-desktop](./screenshot-desktop.png)
+![screenshot-desktop](./images/screenshot-desktop.png)
 
 ### Built With
 - HTML5 Semantics
