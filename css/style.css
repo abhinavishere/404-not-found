@@ -8,6 +8,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Space Mono', monospace;
     font-size: 16px;
 }
@@ -24,6 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-inline: auto;
+    margin-bottom: 2em;
 }
 
 .content-img img{
@@ -87,7 +89,7 @@ body{
         width: 85%;
         flex-direction: row;
         align-items: center;
-        margin-top: 6em;
+        margin-block: 6em;
     }
 
     .content-img , .content-text{
