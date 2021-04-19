@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+}
+
+.head{
+    width: 95%;
+    margin-inline: auto;
+    font-weight: 700;
+    font-family: 'Inconsolata', monospace;
+}
+
+.content{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+}
+
+.content-img img{
+    display: block;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.content-text h3{
+    font-size: 3rem;
+    letter-spacing: -0.035em;
+    color: #333;
+    margin-bottom: 0.5em;
+    line-height: 1.1;
+}
+
+.content-text p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #4F4F4F;
+    margin-block: 0 3em;
+}
+
+.cta{
+    position: relative;
+    display: inline-block;
+    padding: 1.5em 2em;
+    font-size: 0.875rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Inconsolata', monospace;
+    color: #333;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.cta::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff6d5b;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: scale(0.75 , 0.5);
+    transition: all 225ms cubic-bezier(.64,.08,.7,1.48);
+}
+
+.cta:hover::after , .cta:focus::after{
+    transform: scale(1);
+}
+
+@media screen and (min-width : 800px){
+    .head{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+    .content{
+        width: 85%;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 6em;
+    }
+
+    .content-img , .content-text{
+        flex-basis: 50%;
+    }
+    
+    .content-img img{
+        width: 90%;
+        max-width: 450px;
+        margin: 0;
+    }
+    
+    .content-text h3{
+        font-size: 4rem;
+    }
+    
+    .content-text p{
+        max-width: 380px;
+    }
+    
+    .cta{
+        padding: 1.5em 2.6875em;
+    }
+}
